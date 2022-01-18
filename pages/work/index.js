@@ -1,7 +1,12 @@
+import Head from "next/head";
+
 export default function Work() {
   return (
-    <div>
-      <h1>work</h1>
-    </div>
+    <>
+      <Head>
+        <title>Work</title>
+      </Head>
+      <h1>Work</h1>
+    </>
   )
 }

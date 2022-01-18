@@ -2,10 +2,7 @@ import styles from './MobileMenu.module.scss'
 import { navLinks } from '../../data/navLinks'
 import { useState } from 'react'
 import { useRouter } from 'next/router'
-// import { strategies } from '../../data/strategies'
 import clsx from 'clsx'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 
 export default function MobileMenu({ shown, toggleShown }) {
   const router = useRouter()
@@ -38,17 +35,12 @@ export default function MobileMenu({ shown, toggleShown }) {
                   <p className={clsx('ff-good', 'text-accent', styles.link)}>
                     <h3>
                       {item.text}
-                      <span style={{ marginLeft: '.5rem' }}>
-                        {/* <FontAwesomeIcon icon={faChevronDown} /> */}
-                      </span>
+                      <span style={{ marginLeft: '.5rem' }}></span>
                     </h3>
                   </p>
                   {dropdownVisible && (
                     <div className={styles.subLinks}>
                       <ul>
-                        {/* <li>
-                          <b className='fs-400'>Strategies</b>
-                        </li> */}
                         {filterProducts('strategy').map((strat) => (
                           <li
                             key={strat.id}
@@ -82,15 +74,6 @@ export default function MobileMenu({ shown, toggleShown }) {
                         </li>
                       </ul>
                       <ul>
-                        {/* <li>
-                          <b
-                            className='fs-400'
-                            style={{ marginBottom: '.5rem' }}
-                          >
-                            Signals
-                          </b>
-                        </li> */}
-
                         {filterProducts('signal').map((strat) => (
                           <li
                             key={strat.id}
