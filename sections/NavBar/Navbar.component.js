@@ -1,42 +1,42 @@
-import { useEffect, useState } from 'react'
-import styles from './Navbar.module.scss'
-import Link from '../../components/Link/Link.component'
-import clsx from 'clsx'
-import Hamburger from '../../components/Hamburger/Hamburger.component'
-import MobileMenu from '../../components/MobileMenu/MobileMenu.component'
+import { useEffect, useState } from 'react';
+import styles from './Navbar.module.scss';
+import Link from '../../components/Link/Link.component';
+import clsx from 'clsx';
+import Hamburger from '../../components/Hamburger/Hamburger.component';
+import MobileMenu from '../../components/MobileMenu/MobileMenu.component';
 
-export default function Navbar({ strategies }) {
-  function filterProducts(filter) {
-    if (strategies) {
-      return strategies.filter((strat) => strat.type === filter)
-    } else {
-      return []
-    }
-  }
+export default function Navbar() {
+  // function filterProducts(filter) {
+  //   if (strategies) {
+  //     return strategies.filter((strat) => strat.type === filter);
+  //   } else {
+  //     return [];
+  //   }
+  // }
 
-  const [hamburgerOpen, setHamburgerOpen] = useState(false)
+  const [hamburgerOpen, setHamburgerOpen] = useState(false);
 
   const toggleHamburger = () => {
-    setHamburgerOpen(!hamburgerOpen)
-  }
+    setHamburgerOpen(!hamburgerOpen);
+  };
 
   useEffect(() => {
-    const bodyEl = document.querySelector('body')
+    const bodyEl = document.querySelector('body');
 
     if (bodyEl) {
       if (hamburgerOpen) {
-        bodyEl.style.overflow = 'hidden'
+        bodyEl.style.overflow = 'hidden';
       } else {
-        bodyEl.style.overflow = 'auto'
+        bodyEl.style.overflow = 'auto';
       }
     }
-  }, [hamburgerOpen])
+  }, [hamburgerOpen]);
 
   return (
     <nav className={clsx(styles.navBar)}>
       <div className={styles.navbarContent}>
         <div className={styles.logoContainer}>
-          <Link linkTo='/'>
+          <Link linkTo="/">
             <h1>Ramon</h1>
           </Link>
         </div>
@@ -46,21 +46,21 @@ export default function Navbar({ strategies }) {
         </div>
 
         <ul className={clsx(styles.navLinks)}>
-          <li>
+          {/* <li>
             <Link
-              linkTo='/strategies-signals'
-              type='nav'
+              linkTo="/strategies-signals"
+              type="nav"
               subLinks={
                 <>
                   <div className={clsx(styles.subLinks)}>
                     <ul>
                       <li>
-                        <b className='fs-400'>Strategies</b>
+                        <b className="fs-400">Strategies</b>
                       </li>
                       <li>
                         <Link
-                          linkTo='/strategies-signals'
-                          className='button primary'
+                          linkTo="/strategies-signals"
+                          className="button primary"
                           fullWidth
                         >
                           <b>View All</b>
@@ -69,7 +69,7 @@ export default function Navbar({ strategies }) {
                       {strategies &&
                         filterProducts('strategy').map((strat) => (
                           <li key={strat.id}>
-                            <Link linkTo={`/product/${strat.slug}`} type='nav'>
+                            <Link linkTo={`/product/${strat.slug}`} type="nav">
                               {strat.name}
                             </Link>
                           </li>
@@ -77,12 +77,12 @@ export default function Navbar({ strategies }) {
                     </ul>
                     <ul>
                       <li>
-                        <b className='fs-400'>Signals</b>
+                        <b className="fs-400">Signals</b>
                       </li>
                       <li>
                         <Link
-                          linkTo='/strategies-signals'
-                          className='button primary'
+                          linkTo="/strategies-signals"
+                          className="button primary"
                           fullWidth
                         >
                           <b>View All</b>
@@ -90,7 +90,7 @@ export default function Navbar({ strategies }) {
                       </li>
                       {filterProducts('signal').map((strat) => (
                         <li key={strat.id}>
-                          <Link linkTo={`/product/${strat.slug}`} type='nav'>
+                          <Link linkTo={`/product/${strat.slug}`} type="nav">
                             {strat.name}
                           </Link>
                         </li>
@@ -102,20 +102,24 @@ export default function Navbar({ strategies }) {
             >
               Signals & Strategies
             </Link>
+          </li> */}
+          <li>
+            <Link linkTo="/" type="nav">
+              Home
+            </Link>
           </li>
           <li>
-            <Link linkTo='/support' type='nav'>
+            <Link linkTo="/about" type="nav">
               About
             </Link>
           </li>
-
           <li>
-            <Link linkTo='/articles' type='nav'>
+            <Link linkTo="/work" type="nav">
               Work
             </Link>
           </li>
           <li>
-            <Link linkTo='/about' type='nav'>
+            <Link linkTo="/contact" type="nav">
               Contact
             </Link>
           </li>
@@ -124,5 +128,5 @@ export default function Navbar({ strategies }) {
 
       <MobileMenu shown={hamburgerOpen} toggleShown={toggleHamburger} />
     </nav>
-  )
+  );
 }
