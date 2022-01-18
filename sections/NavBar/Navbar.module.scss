@@ -33,8 +33,6 @@
   display: flex;
 
   & .subLinks {
-    // background-color: red;
-    // padding: 1rem;
     display: flex;
   }
   & li {
@@ -48,6 +46,14 @@
 
 .block {
   display: block !important;
+}
+
+.logo {
+  color: white;
+  
+}
+.logo:hover {
+  color: hsl(var(--clr-orange-neon));
 }
 
 @media screen and (max-width: 960px) {
