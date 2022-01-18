@@ -9,7 +9,7 @@ export default function Home() {
         <title>Home</title>
         <meta name="description" value="Ramon's Portfolio" />
       </Head>
-      <section className="section center">
+      <section className="section center centered">
         <p className="title">Hi, I&#39;m Ramon</p>
         <h1>Front End Web Developer</h1>
         <Typewriter

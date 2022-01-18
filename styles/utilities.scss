@@ -111,6 +111,16 @@
   text-align: center;
 }
 
+.left {
+  float: left;
+  margin-right: 1rem;
+}
+
+.profile-img {
+  border: solid transparent;
+  border-radius: 50%;
+}
+
 .numbered-title {
   font-family: var(--ff-serif);
   font-size: var(--fs-500);
@@ -126,6 +136,13 @@
 
 .section {
   padding: 5rem 2rem;
+}
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .title {
@@ -164,5 +181,13 @@ input[type='text']:focus {
 @media screen and (min-width: 900px) {
   .c1-c2 {
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 565px) {
+  .left {
+    float: left;
+    margin-right: 0;
+    margin-bottom: 2em;
   }
 }
