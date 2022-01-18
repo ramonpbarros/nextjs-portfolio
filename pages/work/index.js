@@ -6,7 +6,7 @@ export default function Work() {
       <Head>
         <title>Work</title>
       </Head>
-      <h1>Work 123</h1>
+      <h1>Work 1234</h1>
     </>
   )
 }

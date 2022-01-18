@@ -6,14 +6,6 @@ import Hamburger from '../../components/Hamburger/Hamburger.component';
 import MobileMenu from '../../components/MobileMenu/MobileMenu.component';
 
 export default function Navbar() {
-  // function filterProducts(filter) {
-  //   if (strategies) {
-  //     return strategies.filter((strat) => strat.type === filter);
-  //   } else {
-  //     return [];
-  //   }
-  // }
-
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
 
   const toggleHamburger = () => {
@@ -46,63 +38,6 @@ export default function Navbar() {
         </div>
 
         <ul className={clsx(styles.navLinks)}>
-          {/* <li>
-            <Link
-              linkTo="/strategies-signals"
-              type="nav"
-              subLinks={
-                <>
-                  <div className={clsx(styles.subLinks)}>
-                    <ul>
-                      <li>
-                        <b className="fs-400">Strategies</b>
-                      </li>
-                      <li>
-                        <Link
-                          linkTo="/strategies-signals"
-                          className="button primary"
-                          fullWidth
-                        >
-                          <b>View All</b>
-                        </Link>
-                      </li>
-                      {strategies &&
-                        filterProducts('strategy').map((strat) => (
-                          <li key={strat.id}>
-                            <Link linkTo={`/product/${strat.slug}`} type="nav">
-                              {strat.name}
-                            </Link>
-                          </li>
-                        ))}
-                    </ul>
-                    <ul>
-                      <li>
-                        <b className="fs-400">Signals</b>
-                      </li>
-                      <li>
-                        <Link
-                          linkTo="/strategies-signals"
-                          className="button primary"
-                          fullWidth
-                        >
-                          <b>View All</b>
-                        </Link>
-                      </li>
-                      {filterProducts('signal').map((strat) => (
-                        <li key={strat.id}>
-                          <Link linkTo={`/product/${strat.slug}`} type="nav">
-                            {strat.name}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </>
-              }
-            >
-              Signals & Strategies
-            </Link>
-          </li> */}
           <li>
             <Link linkTo="/" type="nav">
               Home

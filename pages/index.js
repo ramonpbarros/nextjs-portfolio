@@ -16,7 +16,7 @@ export default function Home() {
         <p>Building a more intuitive user experience on the web.</p>
 
         <Button title='Portfolio' link='/work'/>
-        <Button title='Resume' link='/work'/>
+        {/* <Button title='Resume' link='/work'/> */}
       </section>
     </>
   );
