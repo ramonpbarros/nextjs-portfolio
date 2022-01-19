@@ -48,7 +48,7 @@ body {
   background-color: hsl(var(--clr-dark));
   line-height: 1.5;
   min-height: 100vh;
-  background-image: url('/images/stars.png');
+  /* background-image: url('/images/stars.png'); */
 }
 
 /* Image reset styling */
