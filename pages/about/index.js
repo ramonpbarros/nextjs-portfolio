@@ -3,14 +3,18 @@ import Image from 'next/image';
 
 import Link from 'next/link';
 import styles from './about.module.scss'
+import withTransition from "../../HOC/withTransition";
+import Navbar from '../../sections/Navbar/Navbar.component';
 
-
-export default function About() {
+function About() {
   return (
     <>
       <Head>
         <title>About</title>
       </Head>
+      <header>
+        <Navbar />
+      </header>
       <section className="container">
         <h1 className="title center">About Me</h1>
         <div className="left mt-2">
@@ -39,3 +43,5 @@ export default function About() {
     </>
   );
 }
+
+export default withTransition(About);

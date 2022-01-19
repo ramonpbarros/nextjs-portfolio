@@ -4,8 +4,10 @@ import Typewriter from 'typewriter-effect';
 import { useEffect } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import withTransition from '../HOC/withTransition';
+import Navbar from '../sections/Navbar/Navbar.component';
 
-export default function Home() {
+function Home() {
   // useEffect(() => {
   //   const el = document.querySelector('body');
 
@@ -21,6 +23,9 @@ export default function Home() {
         <title>Home</title>
         <meta name="description" value="Ramon's Portfolio" />
       </Head>
+      <header>
+        <Navbar />
+      </header>
       <div className="module" id="module"></div>
 
       <section className="section center centered">
@@ -29,16 +34,7 @@ export default function Home() {
           animate="visible"
           whileHover={{
             scale: [1, 1.4, 1.2],
-            rotate: [0, 10, -10, 0],
-            filter: [
-              'hue-rotate(0) contrast(100%)',
-              'hue-rotate(360deg) contrast(200%)',
-              'hue-rotate(45deg) contrast(300%)',
-              'hue-rotate(0) contrast(100%)',
-            ],
-            transition: {
-              duration: .2
-            },
+            rotate: [0, 10, -10, 0]
           }}
           variants={{
             hidden: {
@@ -75,3 +71,5 @@ export default function Home() {
     </>
   );
 }
+
+export default withTransition(Home);

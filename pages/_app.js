@@ -9,9 +9,8 @@ import Head from 'next/head';
 
 function MyApp({ Component, pageProps, router }) {
   return (
-    <AnimatePresence>
-      <motion.div
-        key={router.route}
+    <AnimatePresence exitBeforeEnter>
+      {/* <motion.div
         initial='pageInitial'
         animate='pageAnimate'
         variants={{
@@ -22,15 +21,12 @@ function MyApp({ Component, pageProps, router }) {
             opacity: 1
           },
         }}
-      >
+      > */}
         <Head>
           <link rel="icon" href="/favicon.ico"></link>
-        </Head>
-        <header>
-          <Navbar />
-        </header>
-        <Component {...pageProps} />
-      </motion.div>
+        </Head>        
+        <Component {...pageProps} key={router.route}/>
+      {/* </motion.div> */}
     </AnimatePresence>
   );
 }
