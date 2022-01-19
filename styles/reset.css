@@ -37,7 +37,11 @@ p {
 }
 
 a {
+  color: hsl(var(--clr-orange-neon));
   text-decoration: none;
+}
+a:hover {
+  color: #FFF;
 }
 
 /*  Setup body */
@@ -68,13 +72,6 @@ button,
 textarea,
 select {
   font: inherit;
-}
-
-a {
-  color: hsl(var(--clr-orange-neon));
-}
-a:hover {
-  color: #FFF;
 }
 
 /* Remove animations for people that have animations turned off */

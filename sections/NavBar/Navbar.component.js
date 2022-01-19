@@ -29,7 +29,7 @@ export default function Navbar() {
       <div className={styles.navbarContent}>
         <div className={styles.logoContainer}>
           <Link linkTo="/">
-            <h3  className={styles.logo}>Ramon</h3>
+            <h3 className={styles.logo}>Ramon</h3>
           </Link>
         </div>
 
@@ -38,11 +38,6 @@ export default function Navbar() {
         </div>
 
         <ul className={clsx(styles.navLinks)}>
-          <li>
-            <Link linkTo="/" type="nav">
-              Home
-            </Link>
-          </li>
           <li>
             <Link linkTo="/about" type="nav">
               About

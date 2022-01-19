@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import withTransition from '../HOC/withTransition';
 import Navbar from '../sections/Navbar/Navbar.component';
+import Btntest from '../components/btntest/btntest';
 
 function Home() {
   // useEffect(() => {
@@ -68,6 +69,7 @@ function Home() {
         <Button title="Portfolio" link="/work" />
         <Button title="Resume" link="/work" />
       </section>
+      <Btntest />
     </>
   );
 }
