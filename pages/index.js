@@ -3,6 +3,7 @@ import Button from '../components/Button/Button';
 import Typewriter from 'typewriter-effect';
 import { useEffect } from 'react';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 export default function Home() {
   // useEffect(() => {
@@ -21,10 +22,41 @@ export default function Home() {
         <meta name="description" value="Ramon's Portfolio" />
       </Head>
       <div className="module" id="module"></div>
-      
-      <section className="section">
-        {/* <p className="title">Hi, I&#39;m Ramon</p>
-        <h1>Front End Web Developer</h1>
+
+      <section className="section center centered">
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          whileHover={{
+            scale: [1, 1.4, 1.2],
+            rotate: [0, 10, -10, 0],
+            filter: [
+              'hue-rotate(0) contrast(100%)',
+              'hue-rotate(360deg) contrast(200%)',
+              'hue-rotate(45deg) contrast(300%)',
+              'hue-rotate(0) contrast(100%)',
+            ],
+            transition: {
+              duration: .2
+            },
+          }}
+          variants={{
+            hidden: {
+              scale: 0.8,
+              opacity: 0
+            },
+            visible: {
+              scale: 1,
+              opacity: 1,
+              transition: {
+                delay: 0.4
+              }
+            }
+          }}
+        >
+          <p className="title">Hi, I&#39;m Ramon</p>
+          <h1>Front End Web Developer</h1>
+        </motion.div>
         <Typewriter
           onInit={(typewriter) => {
             typewriter
@@ -38,7 +70,7 @@ export default function Home() {
           }}
         />
         <Button title="Portfolio" link="/work" />
-        <Button title="Resume" link="/work" /> */}
+        <Button title="Resume" link="/work" />
       </section>
     </>
   );
