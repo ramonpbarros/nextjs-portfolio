@@ -121,6 +121,21 @@
   border-radius: 50%;
 }
 
+.bottom {
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}
+
+.btn-img {
+  cursor: pointer;
+  transition: transform .2s; /* Animation */
+}
+
+.btn-img:hover {
+  transform: scale(0.9); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
 .numbered-title {
   font-family: var(--ff-serif);
   font-size: var(--fs-500);
@@ -189,5 +204,9 @@ input[type='text']:focus {
     float: left;
     margin-right: 0;
     margin-bottom: 2em;
+  }
+
+  .btn-img {
+    visibility: hidden;
   }
 }
