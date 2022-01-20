@@ -7,6 +7,7 @@ import { motion } from 'framer-motion';
 import withTransition from '../HOC/withTransition';
 import Navbar from '../sections/Navbar/Navbar.component';
 import Btntest from '../components/btntest/btntest';
+import Title from '../components/Title/Title.component';
 
 function Home() {
   // useEffect(() => {
@@ -27,7 +28,10 @@ function Home() {
       <header>
         <Navbar />
       </header>
-      <div className="module" id="module"></div>
+      <section>
+        <Title />
+      </section>
+      {/* <div className="module" id="module"></div> */}
 
       {/* <section className="section center centered">
         <motion.div

@@ -1,0 +1,120 @@
+.h2 {
+  margin: 0;
+  writing-mode: vertical-lr;
+  // text-align: center;
+  line-height: 1.7;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.div {
+  display: grid;
+  height: 100vh;
+  // justify-content: center;
+  align-content: center;
+  grid-template-columns: max-content max-content;
+}
+
+.span {
+  transform: translate(-50%, -50%), rotate(180deg);
+  color: white;
+  font-size: 80px;
+}
+
+.span::before {
+  content: "RAMON";
+  position: absolute;
+  color: transparent;
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent 0,
+    transparent 2px,
+    white 2px,
+    white 4px
+  );
+  -webkit-background-clip: text;
+  top: 0px;
+  left: 0;
+  z-index: -1;
+  transition: 1s;
+}
+
+.span::after {
+  content: "RAMON";
+  position: absolute;
+  color: transparent;
+  background-image: repeating-linear-gradient(
+    135deg,
+    transparent 0,
+    transparent 2px,
+    white 2px,
+    white 4px
+  );
+  -webkit-background-clip: text;
+  top: 0px;
+  left: 0px;
+  transition: 1s;
+}
+
+.span:hover:before {
+  top: 10px;
+  left: 10px;
+}
+
+.span:hover:after {
+  top: -10px;
+  left: -10px;
+} 
+
+.barros {
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 80px;
+}
+
+.barros::before {
+  content: "BARROS";
+  position: absolute;
+  color: transparent;
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent 0,
+    transparent 2px,
+    white 2px,
+    white 4px
+  );
+  -webkit-background-clip: text;
+  top: 0px;
+  left: 0;
+  z-index: -1;
+  transition: 1s;
+}
+
+.barros::after {
+  content: "BARROS";
+  position: absolute;
+  color: transparent;
+  background-image: repeating-linear-gradient(
+    135deg,
+    transparent 0,
+    transparent 2px,
+    white 2px,
+    white 4px
+  );
+  -webkit-background-clip: text;
+  top: 0px;
+  left: 0px;
+  transition: 1s;
+}
+
+.barros:hover:before {
+  top: 10px;
+  left: 10px;
+}
+
+.barros:hover:after {
+  top: -10px;
+  left: -10px;
+} 
