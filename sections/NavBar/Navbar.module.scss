@@ -50,11 +50,51 @@
 
 .logo {
   color: white;
-  
+  &:after {
+    content: '';
+    position: absolute;
+    width: 130%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: hsl(var(--clr-orange-neon));
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s;
+  }
+
+  &:hover {
+    &:after {
+      transform-origin: bottom left;
+      transform: scaleX(1);
+    }
+  }
 }
-.logo:hover {
-  color: hsl(var(--clr-orange-neon));
-}
+// .logo {
+//   color: white;
+//   &:after {
+//     content: '';
+//     position: absolute;
+//     width: 130%;
+//     height: 1px;
+//     bottom: 0;
+//     left: 0;
+//     background-color: hsl(var(--clr-orange-neon));
+//     transform: scaleX(0);
+//     transform-origin: bottom right;
+//     transition: transform 0.3s;
+//   }
+
+//   &:hover {
+//     &:after {
+//       transform-origin: bottom left;
+//       transform: scaleX(1);
+//     }
+//   }
+// }
+// .logo:hover {
+//   color: hsl(var(--clr-orange-neon));
+// }
 
 @media screen and (max-width: 960px) {
   .hamburger {

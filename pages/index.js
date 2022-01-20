@@ -29,7 +29,7 @@ function Home() {
       </header>
       <div className="module" id="module"></div>
 
-      <section className="section center centered">
+      {/* <section className="section center centered">
         <motion.div
           initial="hidden"
           animate="visible"
@@ -68,8 +68,8 @@ function Home() {
         />
         <Button title="Portfolio" link="/work" />
         <Button title="Resume" link="/work" />
-      </section>
-      <Btntest />
+        <Btntest />
+      </section> */}
     </>
   );
 }

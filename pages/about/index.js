@@ -38,7 +38,7 @@ function About() {
           With each project, my goal is to best engage my audience for an
           impactful user-experience.
         </p>
-        <p>Interested on getting to know me better? <Link href='/contact'>Let&#39;s talk</Link> </p>
+        <p>Interested on getting to know me better? <Link href='/contact' className='test'>Let&#39;s talk</Link> </p>
       </section>
     </>
   );
