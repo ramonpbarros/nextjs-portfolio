@@ -120,3 +120,24 @@
   top: -10px;
   left: -10px;
 } 
+
+@media screen and (min-width: 1500px) {
+  .ramon {
+    font-size: 120px;
+  }
+
+  .barros {
+    font-size: 120px;
+  }
+}
+
+@media (max-width: 960px) {
+  .ramon {
+    font-size: 60px;
+  }
+
+  .barros {
+    font-size: 60px;
+  }
+}
+

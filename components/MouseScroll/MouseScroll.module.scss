@@ -216,3 +216,13 @@
     opacity: 1;
   }
 }
+
+@media (max-width: 960px) {
+  .mouse {
+    visibility: hidden;
+  }
+  
+  .wheel {
+    visibility: hidden;
+  }
+}
