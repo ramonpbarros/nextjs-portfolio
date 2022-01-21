@@ -11,19 +11,19 @@
 
 .div {
   display: grid;
-  height: 100vh;
+  height: 90vh;
   justify-content: center;
   align-content: center;
   grid-template-columns: max-content max-content;
 }
 
-.span {
+.ramon {
   transform: translate(-50%, -50%), rotate(180deg);
   color: white;
   font-size: 80px;
 }
 
-.span::before {
+.ramon::before {
   content: "RAMON";
   position: absolute;
   color: transparent;
@@ -41,7 +41,7 @@
   transition: 1s;
 }
 
-.span::after {
+.ramon::after {
   content: "RAMON";
   position: absolute;
   color: transparent;
@@ -58,12 +58,12 @@
   transition: 1s;
 }
 
-.span:hover:before {
+.ramon:hover:before {
   top: 10px;
   left: 10px;
 }
 
-.span:hover:after {
+.ramon:hover:after {
   top: -10px;
   left: -10px;
 } 
@@ -72,6 +72,7 @@
   transform: translate(-50%, -50%);
   color: white;
   font-size: 80px;
+  margin-top: 2em;
 }
 
 .barros::before {
