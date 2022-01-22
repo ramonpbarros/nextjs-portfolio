@@ -1,29 +1,33 @@
 export const navLinks = [
+  // {
+  //   text: 'Signals & Strategies',
+  //   subLinks: [
+  //     {
+  //       url: '/strategies-signals',
+  //       header: 'Strategies',
+  //       text: 'View All'
+  //     },
+  //     {
+  //       url: '/strategies-signals',
+  //       header: 'Signals',
+  //       text: 'View All'
+  //     }
+  //   ]
+  // },
   {
-    text: 'Signals & Strategies',
-    subLinks: [
-      {
-        url: '/strategies-signals',
-        header: 'Strategies',
-        text: 'View All'
-      },
-      {
-        url: '/strategies-signals',
-        header: 'Signals',
-        text: 'View All'
-      }
-    ]
+    url: '/',
+    text: 'HOME'
   },
   {
-    url: '/support',
-    text: 'OnBoarding & Support'
-  },
-  {
-    url: '/articles',
-    text: 'News'
+    url: '/work',
+    text: 'WORK'
   },
   {
     url: '/about',
-    text: 'About'
+    text: 'ABOUT'
+  },
+  {
+    url: '/contact',
+    text: 'CONTACT'
   },
 ]
