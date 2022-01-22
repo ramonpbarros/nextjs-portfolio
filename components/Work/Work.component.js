@@ -1,9 +1,8 @@
-import { useEffect } from 'react';
-
 import clsx from 'clsx';
-import styles from './About.module.scss';
+import { useEffect } from 'react';
+import styles from './Work.module.scss';
 
-export default function About() {
+export default function Work() {
   useEffect(() => {
     function reveal() {
       var reveals = document.querySelectorAll('.reveal');
@@ -26,10 +25,10 @@ export default function About() {
 
   return (
     <>
-      <section className="section">
+      <section className={clsx('section', 'bg-black')}>
         <div className={styles.div}>
           <div className="reveal fade-left">
-            <p className={clsx(styles.h2, styles.about)}>ABOUT</p>
+            <p className={clsx(styles.h2, styles.work)}>WORK</p>
           </div>
         </div>
       </section>
@@ -39,12 +38,15 @@ export default function About() {
           position: relative;
           opacity: 0;
         }
+
         .reveal.active {
           opacity: 1;
         }
+        
         .active.fade-left {
           animation: fadeLeft 1s ease-in;
         }
+     
         @keyframes fadeLeft {
           0% {
             transform: translateX(-100px);

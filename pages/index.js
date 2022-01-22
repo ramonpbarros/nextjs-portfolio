@@ -2,15 +2,15 @@ import Head from 'next/head';
 import withTransition from '../HOC/withTransition';
 import Navbar from '../sections/Navbar/Navbar.component';
 import Title from '../components/Title/Title.component';
-import {
-  animateScroll as scroll,
-} from 'react-scroll';
+import { animateScroll as scroll } from 'react-scroll';
 import About from '../components/About/About.component';
+import Work from '../components/Work/Work.component';
+import Contact from '../components/Contact/Contact.component';
 
 function Home() {
-  function scrollTop() {
-    scroll.scrollToTop();
-  }
+  // function scrollTop() {
+  //   scroll.scrollToTop();
+  // }
 
   return (
     <>
@@ -24,10 +24,16 @@ function Home() {
       <section>
         <Title />
       </section>
-      {/* <section>
+      <section>
+        <Work />
+      </section>
+      <section>
         <About />
-        <button onClick={scrollTop}>to the top</button>
-      </section> */}
+      </section>
+      <section>
+        <Contact />
+        
+      </section>
     </>
   );
 }

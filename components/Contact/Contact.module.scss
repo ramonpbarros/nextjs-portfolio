@@ -12,17 +12,17 @@
   // justify-content: center;
   // align-content: center;
   grid-template-columns: max-content max-content;
-  padding-left: 6em;
+  padding-left: 8em;
 }
 
-.about {
+.contact {
   transform: translate(-50%, -50%);
   color: white;
   font-size: 80px;
 }
 
-.about::before {
-  content: "ABOUT";
+.contact::before {
+  content: "CONTACT";
   position: absolute;
   color: transparent;
   background-image: repeating-linear-gradient(
@@ -39,8 +39,8 @@
   transition: 1s;
 }
 
-.about::after {
-  content: "ABOUT";
+.contact::after {
+  content: "CONTACT";
   position: absolute;
   color: transparent;
   background-image: repeating-linear-gradient(
@@ -56,34 +56,34 @@
   transition: 1s;
 }
 
-.about:hover:before {
+.contact:hover:before {
   top: 10px;
   left: 10px;
 }
 
-.about:hover:after {
+.contact:hover:after {
   top: -10px;
   left: -10px;
 } 
 
 
 @media screen and (min-width: 1500px) {
-  .about {
+  .contact {
     font-size: 120px;
   }
 
   .div {
-    padding-left: 10em;
+    padding-left: 12em;
   }
 }
 
 @media (max-width: 960px) {
-  .about {
+  .contact {
     font-size: 60px;
   }
 
   .div {
-    padding-left: 4em;
+    padding-left: 6em;
   }
 }
 

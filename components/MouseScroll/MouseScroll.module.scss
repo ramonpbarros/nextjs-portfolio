@@ -9,8 +9,6 @@
   height: 100px;
   margin-top: -3em;
   overflow: hidden;
-  bottom: 0;
-  right: 0;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -32,19 +30,19 @@
   height: 16px;
 }
 
-.unu {
+.one {
   margin-top: 1px;
 }
 
-.unu,
-.doi,
-.trei {
+.one,
+.two,
+.three {
   -webkit-animation: mouse-scroll 1s infinite;
   -moz-animation: mouse-scroll 1s infinite;
   animation: mouse-scroll 1s infinite;
 }
 
-.unu {
+.one {
   -webkit-animation-delay: 0.1s;
   -moz-animation-delay: 0.1s;
   -webkit-animation-direction: alternate;
@@ -53,7 +51,7 @@
   animation-delay: alternate;
 }
 
-.doi {
+.two {
   -webkit-animation-delay: 0.2s;
   -moz-animation-delay: 0.2s;
   -webkit-animation-direction: alternate;
@@ -64,7 +62,7 @@
   margin-top: -6px;
 }
 
-.trei {
+.three {
   -webkit-animation-delay: 0.3s;
   -moz-animation-delay: 0.3s;
   -webkit-animation-direction: alternate;

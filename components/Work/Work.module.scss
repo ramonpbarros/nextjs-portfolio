@@ -15,14 +15,14 @@
   padding-left: 6em;
 }
 
-.about {
+.work {
   transform: translate(-50%, -50%);
   color: white;
   font-size: 80px;
 }
 
-.about::before {
-  content: "ABOUT";
+.work::before {
+  content: 'WORK';
   position: absolute;
   color: transparent;
   background-image: repeating-linear-gradient(
@@ -39,8 +39,8 @@
   transition: 1s;
 }
 
-.about::after {
-  content: "ABOUT";
+.work::after {
+  content: 'WORK';
   position: absolute;
   color: transparent;
   background-image: repeating-linear-gradient(
@@ -56,19 +56,23 @@
   transition: 1s;
 }
 
-.about:hover:before {
+.work:hover:before {
   top: 10px;
   left: 10px;
 }
 
-.about:hover:after {
+.work:hover:after {
   top: -10px;
   left: -10px;
-} 
+}
 
+.reveal {
+  position: relative;
+  opacity: 0;
+}
 
 @media screen and (min-width: 1500px) {
-  .about {
+  .work {
     font-size: 120px;
   }
 
@@ -78,7 +82,7 @@
 }
 
 @media (max-width: 960px) {
-  .about {
+  .work {
     font-size: 60px;
   }
 
@@ -86,4 +90,3 @@
     padding-left: 4em;
   }
 }
-
