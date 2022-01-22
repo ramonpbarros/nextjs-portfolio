@@ -38,15 +38,12 @@ export default function Work() {
           position: relative;
           opacity: 0;
         }
-
         .reveal.active {
           opacity: 1;
         }
-        
         .active.fade-left {
           animation: fadeLeft 1s ease-in;
         }
-     
         @keyframes fadeLeft {
           0% {
             transform: translateX(-100px);
