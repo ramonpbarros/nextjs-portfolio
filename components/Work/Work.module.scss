@@ -7,18 +7,31 @@
 
 .div {
   // display: grid;
-  height: 80vh;
+  // height: 100vh;
   width: fit-content;
   // justify-content: center;
   // align-content: center;
   grid-template-columns: max-content max-content;
   padding-left: 6em;
+  float: left;
+}
+
+.test {
+  overflow: hidden;
+  right: 0;
+  width: fit-content;
+  // background-color: #fff;
+  position: absolute;
+}
+.test2 {
+  border-radius: .5em;
 }
 
 .work {
   transform: translate(-50%, -50%);
   color: white;
   font-size: 80px;
+  font-weight: bold;
 }
 
 .work::before {
@@ -78,6 +91,7 @@
 
   .div {
     padding-left: 10em;
+    height: 90vh;
   }
 }
 

@@ -19,6 +19,7 @@
   transform: translate(-50%, -50%);
   color: white;
   font-size: 80px;
+  font-weight: bold;
 }
 
 .about::before {
@@ -73,7 +74,8 @@
   }
 
   .div {
-    padding-left: 10em;
+    padding-left: 11em;
+    height: 90vh;
   }
 }
 

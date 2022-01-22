@@ -1,4 +1,5 @@
 import clsx from 'clsx';
+import Image from 'next/image';
 import { useEffect } from 'react';
 import styles from './Work.module.scss';
 
@@ -25,11 +26,21 @@ export default function Work() {
 
   return (
     <>
-      <section className={clsx('section', 'bg-black')}>
+      <section className={clsx('section-component', 'bg-black')}>
         <div className={styles.div}>
           <div className="reveal fade-left">
             <p className={clsx(styles.h2, styles.work)}>WORK</p>
           </div>
+        </div>
+        <div className={clsx(styles.test, 'section', 'reveal', 'fade-right')}>
+          <Image
+            src="/images/work.jpg"
+            width="750px"
+            height="450"
+            alt="image"
+            className={styles.test2}
+          />
+          <div className={styles.overlay}></div>
         </div>
       </section>
 
@@ -44,9 +55,22 @@ export default function Work() {
         .active.fade-left {
           animation: fadeLeft 1s ease-in;
         }
+        .active.fade-right {
+          animation: fade-right 1s ease-in;
+        }
         @keyframes fadeLeft {
           0% {
             transform: translateX(-100px);
+            opacity: 0;
+          }
+          100% {
+            transform: translateX(0);
+            opacity: 1;
+          }
+        }
+        @keyframes fade-right {
+          0% {
+            transform: translateX(100px);
             opacity: 0;
           }
           100% {

@@ -39,6 +39,11 @@ export default function Navbar() {
 
         <ul className={clsx(styles.navLinks)}>
           <li>
+            <Link linkTo="/" type="nav">
+              Home
+            </Link>
+          </li>
+          <li>
             <Link linkTo="/work" type="nav">
               Work
             </Link>
