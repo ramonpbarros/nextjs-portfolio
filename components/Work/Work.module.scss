@@ -1,7 +1,7 @@
 .h2 {
   margin: 0;
   // writing-mode: vertical-lr;
-  // text-align: center;
+  text-align: center;
   line-height: 1.8;
 }
 
@@ -12,20 +12,26 @@
   // justify-content: center;
   // align-content: center;
   grid-template-columns: max-content max-content;
-  padding-left: 6em;
+  margin-top: 5em;
+  margin-left: 17em;
   float: left;
 }
 
 .test {
-  overflow: hidden;
-  right: 0;
-  width: fit-content;
-  // background-color: #fff;
-  position: absolute;
+  clear:both;
 }
+
 .test2 {
-  border-radius: .5em;
+  text-align: center;
+  font-size: 40px;
 }
+
+.stroke {
+  -webkit-text-stroke: 1px black;
+  color: white;
+  font-weight: bold;
+}
+
 
 .work {
   transform: translate(-50%, -50%);
@@ -34,26 +40,26 @@
   font-weight: bold;
 }
 
-.work::before {
-  content: 'WORK';
-  position: absolute;
-  color: transparent;
-  background-image: repeating-linear-gradient(
-    45deg,
-    transparent 0,
-    transparent 2px,
-    white 2px,
-    white 4px
-  );
-  -webkit-background-clip: text;
-  top: 0px;
-  left: 0;
-  z-index: -1;
-  transition: 1s;
-}
+// .work::before {
+//   content: 'Front End';
+//   position: absolute;
+//   color: transparent;
+//   background-image: repeating-linear-gradient(
+//     45deg,
+//     transparent 0,
+//     transparent 2px,
+//     white 2px,
+//     white 4px
+//   );
+//   -webkit-background-clip: text;
+//   top: 0px;
+//   left: 0;
+//   z-index: -1;
+//   transition: 1s;
+// }
 
 .work::after {
-  content: 'WORK';
+  content: 'Web Developer';
   position: absolute;
   color: transparent;
   background-image: repeating-linear-gradient(
@@ -69,10 +75,10 @@
   transition: 1s;
 }
 
-.work:hover:before {
-  top: 10px;
-  left: 10px;
-}
+// .work:hover:before {
+//   top: 10px;
+//   left: 10px;
+// }
 
 .work:hover:after {
   top: -10px;
@@ -84,6 +90,36 @@
   opacity: 0;
 }
 
+.btn {
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  padding: 14px 60px;
+  border-radius: 8px;
+  color: #212121;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 1.5em 1.5em;
+  transition: 0.4s;
+}
+
+.btn1 {
+  color: white;
+  border: 1px solid white;
+  background-image: linear-gradient(to right, transparent 50%, #f0860d 50%);
+  background-size: 200%;
+  background-position: 0%;
+}
+
+.btn1:hover {
+  color: #353535;
+  background-position: 100%;
+}
+
 @media screen and (min-width: 1500px) {
   .work {
     font-size: 120px;
@@ -91,7 +127,11 @@
 
   .div {
     padding-left: 10em;
-    height: 90vh;
+    // height: 90vh;
+  }
+
+  .test2 {
+    font-size: 60px;
   }
 }
 
@@ -101,6 +141,6 @@
   }
 
   .div {
-    padding-left: 4em;
+    margin-left: 11em;
   }
 }

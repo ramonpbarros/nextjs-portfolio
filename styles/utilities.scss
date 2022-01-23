@@ -158,8 +158,10 @@
 }
 
 .section-component {
-  padding: 5rem 2rem;
+  // padding: 5rem 2rem;
   height: 100vh;
+  background-image: url('/images/work.jpg');
+  background-size: cover;
 }
 
 .centered {
