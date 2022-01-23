@@ -2,7 +2,6 @@ import '../styles/globals.scss';
 import '../styles/utilities.scss';
 import '../styles/typography.css';
 import '../styles/reset.css';
-import Navbar from '../sections/Navbar/Navbar.component';
 import { AnimatePresence, motion } from 'framer-motion';
 
 import Head from 'next/head';
