@@ -6,11 +6,10 @@
 .section_header {
   text-align: center;
   margin: 0 auto;
-  padding: 40px 0;
-  font: 300 60px 'Oswald', sans-serif;
+  padding: 40px 0;  
+  font-size: 80px;
+  font-weight: bold;
   color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 6px;
   margin-top: 1em;
 }
 
@@ -41,42 +40,77 @@
 .form_horizontal {
   /*float: left;*/
   max-width: 400px;
-  font-family: 'Lato';
+  // font-family: 'Lato';
   font-weight: 400;
 }
 
-.form_control, 
-.textarea {
-  max-width: 400px;
-  background-color: #000;
+.form_control {
+  width: 15em;
+  background-color: black;
   color: #fff;
   letter-spacing: 1px;
+  border-style: solid;
+  border-color: white;
+  margin-bottom: .5em;
 }
 
-.send_button {
-  margin-top: 15px;
-  height: 34px;
-  width: 400px;
-  overflow: hidden;
-  transition: all .2s ease-in-out;
+.btn {
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  // padding: 14px 60px;
+  border-radius: 8px;
+  color: #212121;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 1.5em;
+  transition: 0.4s;
+  width: 24em;
+  height: 3em;
 }
 
-.alt_send_button {
-  width: 400px;
-  height: 34px;
-  transition: all .2s ease-in-out;
+.btn1 {
+  color: white;
+  border: 1px solid white;
+  background-image: linear-gradient(to right, transparent 50%, #f0860d 50%);
+  background-size: 200%;
+  background-position: 0%;
 }
 
-.send_text {
-  display: block;
-  margin-top: 10px;
-  font: 700 12px 'Lato', sans-serif;
-  letter-spacing: 2px;
+.btn1:hover {
+  color: #353535;
+  background-position: 100%;
 }
 
-.alt_send_button:hover {
-  transform: translate3d(0px, -29px, 0px);
-}
+// .send_button {
+//   margin-top: 15px;
+//   height: 34px;
+//   width: 400px;
+//   overflow: hidden;
+//   // transition: all .2s ease-in-out;
+// }
+
+// .alt_send_button {
+//   width: 400px;
+//   height: 34px;
+//   transition: all .2s ease-in-out;
+// }
+
+// .send_text {
+//   display: block;
+//   margin-top: 10px;
+//   font-size: 12px;
+//   font-weight: 700;
+//   letter-spacing: 2px;
+// }
+
+// .alt_send_button:hover {
+//   transform: translate3d(0px, -29px, 0px);
+// }
 
 /* Begin Right Contact Page */
 .direct_contact_container {
@@ -95,8 +129,9 @@
   color: #aaa;
 }
 
-.contact_text {
-  font: 300 18px 'Lato', sans-serif;
+.contact_text {  
+  font-size: 18px;
+  font-weight: 300;
   letter-spacing: 1.9px;
   color: #bbb;
 }
@@ -182,7 +217,8 @@
 }
 
 .copyright {
-  font: 200 14px 'Oswald', sans-serif;
+  font-size: 14px;
+  font-weight: 200;
   color: #555;
   letter-spacing: 1px;
   text-align: center;
@@ -190,6 +226,14 @@
 
 .hr {
   border-color: rgba(255,255,255,.6);
+}
+
+.confirmation {
+  margin-top: 4em;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  
 }
 
 /* Begin Media Queries*/
@@ -256,7 +300,8 @@
 }
 
 @media screen and (max-width: 410px) {
-  .send_button {
-    width: 99%;
+  .btn {
+    width: 15em;
+    height: 3em;
   }
 }

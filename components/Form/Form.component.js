@@ -1,5 +1,7 @@
 import clsx from 'clsx';
 import styles from './Form.module.scss';
+import { useForm, ValidationError } from '@formspree/react';
+
 import { FaPaperPlane } from 'react-icons/fa';
 import { FaMapMarkerAlt } from 'react-icons/fa';
 import { FaPhoneAlt } from 'react-icons/fa';
@@ -10,25 +12,31 @@ import { FaCodepen } from 'react-icons/fa';
 import { FaTwitter } from 'react-icons/fa';
 
 export default function Form() {
+  const [state, handleSubmit] = useForm('mayvqkwn');
+  if (state.succeeded) {
+    return <p className={styles.confirmation}>Your Message was sent! &#128640;<br/>I&#39;ll get back to you as soon as possible.<br/>Thank you!</p>;
+  }
+
   return (
     <section className="contact">
-      <h1 className={styles.section_header}>Contact</h1>
+      <h1 className={styles.section_header}>Let&#39;s Talk</h1>
 
       <div className={styles.contact_wrapper}>
         {/* Left contact page */}
 
-        <form className={styles.form_horizontal} role="form">
+        <form onSubmit={handleSubmit}>
           <div className={styles.form_group}>
             <div className={styles.col_12}>
               <input
                 type="text"
+                name="name"
                 className={styles.form_control}
                 id="name"
-                placeholder="NAME"
-                name="name"
-                value=""
-                onChange={''}
+                placeholder="Full Name"
+                // value=""
+                // onChange={''}
                 required
+                style={{ backgroundColor: 'black', borderColor: 'white' }}
               />
             </div>
           </div>
@@ -36,36 +44,39 @@ export default function Form() {
           <div className={styles.form_group}>
             <div className={styles.col_12}>
               <input
-                type="email"
-                className={styles.form_control}
                 id="email"
-                placeholder="EMAIL"
+                type="email"
                 name="email"
-                value=""
-                required
+                className={styles.form_control}
+                placeholder=" Email"
+              />
+              <ValidationError
+                prefix="Email"
+                field="email"
+                errors={state.errors}
               />
             </div>
           </div>
 
           <textarea
             className={styles.form_control}
-            rows="10"
-            placeholder="MESSAGE"
+            rows="7"
+            placeholder=" Message"
+            id="message"
             name="message"
-            required
           ></textarea>
+          <ValidationError
+            prefix="Message"
+            field="message"
+            errors={state.errors}
+          />
 
           <button
-            className={clsx(styles.btn, styles.btn_primary, styles.send_button)}
-            id="submit"
+            className={clsx(styles.btn, styles.btn1, styles.send_button)}
             type="submit"
-            value="SEND"
+            disabled={state.submitting}
           >
-            <div className={styles.alt_send_button}>
-              {/* <i className="fa fa-paper-plane"></i> */}
-              <FaPaperPlane />
-              <span className={styles.send_text}>SEND</span>
-            </div>
+            SEND
           </button>
         </form>
 
@@ -76,7 +87,7 @@ export default function Form() {
             <li className={styles.list_item}>
               <FaMapMarkerAlt />
               <span className={clsx(styles.contact_text, styles.place)}>
-                City, State
+                San Diego, CA
               </span>
               {/* <i className="fa fa-map-marker fa-2x"></i> */}
             </li>
@@ -94,7 +105,10 @@ export default function Form() {
               <FaEnvelope />
 
               <span className={clsx(styles.contact_text, styles.gmail)}>
-                <a href="mailto: ramonpbarros@gmail.com" title="Send me an email">
+                <a
+                  href="mailto: ramonpbarros@gmail.com"
+                  title="Send me an email"
+                >
                   ramonpbarros@gmail.com
                 </a>
               </span>
