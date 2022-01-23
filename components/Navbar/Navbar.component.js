@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import styles from './Navbar.module.scss';
-import Link from '../../components/Link/Link.component';
+import Link from '../Link/Link.component';
 import clsx from 'clsx';
-import Hamburger from '../../components/Hamburger/Hamburger.component';
-import MobileMenu from '../../components/MobileMenu/MobileMenu.component';
+import Hamburger from '../Hamburger/Hamburger.component';
+import MobileMenu from '../MobileMenu/MobileMenu.component';
 
 export default function Navbar() {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);

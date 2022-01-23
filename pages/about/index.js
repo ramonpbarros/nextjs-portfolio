@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import styles from './about.module.scss'
 import withTransition from "../../HOC/withTransition";
-import Navbar from '../../sections/Navbar/Navbar.component';
+import Navbar from '../../components/Navbar/Navbar.component';
 
 function About() {
   return (

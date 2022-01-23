@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import withTransition from '../HOC/withTransition';
-import Navbar from '../sections/Navbar/Navbar.component';
+import Navbar from '../components/Navbar/Navbar.component';
 import Title from '../components/Title/Title.component';
 import Work from '../components/Work/Work.component';
 

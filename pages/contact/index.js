@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import React from 'react';
 import withTransition from '../../HOC/withTransition';
-import Navbar from '../../sections/Navbar/Navbar.component';
+import Navbar from '../../components/Navbar/Navbar.component';
 
 function Contact() {
   return (
