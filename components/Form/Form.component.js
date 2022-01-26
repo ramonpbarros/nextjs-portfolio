@@ -14,141 +14,152 @@ import { FaTwitter } from 'react-icons/fa';
 export default function Form() {
   const [state, handleSubmit] = useForm('mayvqkwn');
   if (state.succeeded) {
-    return <p className={styles.confirmation}>Your Message was sent! &#128640;<br/>I&#39;ll get back to you as soon as possible.<br/>Thank you!</p>;
+    return (
+      <p className={styles.confirmation}>
+        Your Message was sent! &#128640;
+        <br />
+        I&#39;ll get back to you as soon as possible.
+        <br />
+        Thank you!
+      </p>
+    );
   }
 
   return (
-    <section className="contact">
-      <h1 className={styles.section_header}>Let&#39;s Talk</h1>
-
-      <div className={styles.contact_wrapper}>
-        {/* Left contact page */}
-
-        <form onSubmit={handleSubmit}>
-          <div className={styles.form_group}>
-            <div className={styles.col_12}>
-              <input
-                type="text"
-                name="name"
-                className={styles.form_control}
-                id="name"
-                placeholder="Full Name"
-                // value=""
-                // onChange={''}
-                required
-                style={{ backgroundColor: 'black', borderColor: 'white' }}
-              />
+    <section>
+      <div className={styles.background}>
+        <div className={styles.container}>
+          <div className={styles.screen}>
+            <div className={styles.screen_header}>
+              <div className={styles.screen_header_left}>
+                <div
+                  className={clsx(styles.screen_header_button, styles.close)}
+                ></div>
+                <div
+                  className={clsx(styles.screen_header_button, styles.maximize)}
+                ></div>
+                <div
+                  className={clsx(styles.screen_header_button, styles.minimize)}
+                ></div>
+              </div>
+              <div className={styles.screen_header_right}>
+                <div className={styles.screen_header_ellipsis}></div>
+                <div className={styles.screen_header_ellipsis}></div>
+                <div className={styles.screen_header_ellipsis}></div>
+              </div>
             </div>
-          </div>
-
-          <div className={styles.form_group}>
-            <div className={styles.col_12}>
-              <input
-                id="email"
-                type="email"
-                name="email"
-                className={styles.form_control}
-                placeholder=" Email"
-              />
-              <ValidationError
-                prefix="Email"
-                field="email"
-                errors={state.errors}
-              />
+            <div className={styles.screen_body}>
+              <div className={clsx(styles.screen_body_item, styles.left)}>
+                <div className={styles.app_title}>
+                  <span>CONTACT</span>
+                  <span>ME</span>
+                </div>
+                <div className={styles.app_location}>
+                  <FaMapMarkerAlt /> &nbsp;San Diego, CA
+                </div>
+                <div className={styles.app_contact}>
+                  <FaPhoneAlt /> &nbsp;+1 (619) 481-7715
+                </div>
+                <div className={styles.app_email}>
+                  <FaEnvelope /> &nbsp;ramonpbarros@gmail.com
+                </div>
+              </div>
+              <form onSubmit={handleSubmit} className={styles.screen_body_item}>
+                <div className={styles.app_form}>
+                  <div className={styles.app_form_group}>
+                    <input
+                      type="text"
+                      name="name"
+                      className={styles.app_form_control}
+                      id="name"
+                      placeholder="FULL NAME"
+                      required
+                      style={{
+                        width: '100%',
+                        padding: '10px 0',
+                        background: 'none',
+                        border: 'none',
+                        borderBottom: '1px solid #666',
+                        color: '#ddd',
+                        fontSize: '14px',
+                        outline: 'none',
+                        transition: 'border-color .2s'
+                      }}
+                    />
+                  </div>
+                  <div className={styles.app_form_group}>
+                    <input
+                      id="email"
+                      type="email"
+                      name="email"
+                      className={styles.app_form_control}
+                      placeholder="EMAIL"
+                    />
+                  </div>
+                  <div className={clsx(styles.app_form_group, styles.message)}>
+                    <textarea
+                      rows="1"
+                      id="message"
+                      name="message"
+                      className={styles.app_form_control}
+                      placeholder="MESSAGE"
+                    />
+                  </div>
+                  <div className={clsx(styles.app_form_group, styles.buttons)}>
+                    <button className={clsx(styles.btn, styles.btn1)}>
+                      SEND
+                    </button>
+                  </div>
+                </div>
+              </form>
             </div>
-          </div>
-
-          <textarea
-            className={styles.form_control}
-            rows="7"
-            placeholder=" Message"
-            id="message"
-            name="message"
-          ></textarea>
-          <ValidationError
-            prefix="Message"
-            field="message"
-            errors={state.errors}
-          />
-
-          <button
-            className={clsx(styles.btn, styles.btn1, styles.send_button)}
-            type="submit"
-            disabled={state.submitting}
-          >
-            SEND
-          </button>
-        </form>
-
-        {/* Left contact page */}
-
-        <div className={styles.direct_contact_container}>
-          <ul className={styles.contact_list}>
-            <li className={styles.list_item}>
-              <FaMapMarkerAlt />
-              <span className={clsx(styles.contact_text, styles.place)}>
-                San Diego, CA
-              </span>
-              {/* <i className="fa fa-map-marker fa-2x"></i> */}
-            </li>
-
-            <li className={styles.list_item}>
-              <FaPhoneAlt />
-              <span className={clsx(styles.contact_text, styles.phone)}>
-                <a href="tel:1-619-481-7715" title="Give me a call">
-                  (619) 481-7715
-                </a>
-              </span>
-            </li>
-
-            <li className={styles.list_item}>
-              <FaEnvelope />
-
-              <span className={clsx(styles.contact_text, styles.gmail)}>
-                <a
-                  href="mailto: ramonpbarros@gmail.com"
-                  title="Send me an email"
-                >
-                  ramonpbarros@gmail.com
-                </a>
-              </span>
-            </li>
-          </ul>
-
-          <hr className={styles.hr} />
-          <ul className={styles.social_media_list}>
-            <li>
-              <a href="#" target="_blank" className={styles.contact_icon}>
-                {/* <i className="fa fa-github" aria-hidden="true"></i> */}
-                <FaGithub />
-              </a>
-            </li>
-            <li>
-              <a href="#" target="_blank" className={styles.contact_icon}>
-                {/* <i className="fa fa-codepen" aria-hidden="true"></i> */}
-                <FaLinkedinIn />
-              </a>
-            </li>
-            <li>
-              <a href="#" target="_blank" className={styles.contact_icon}>
-                {/* <i className="fa fa-twitter" aria-hidden="true"></i> */}
-                <FaTwitter />
-              </a>
-            </li>
-            <li>
-              <a href="#" target="_blank" className={styles.contact_icon}>
-                {/* <i className="fa fa-instagram" aria-hidden="true"></i> */}
-                <FaCodepen />
-              </a>
-            </li>
-          </ul>
-          <hr className={styles.hr} />
-
-          <div className={styles.copyright}>
-            &copy; ALL OF THE RIGHTS RESERVED
           </div>
         </div>
       </div>
+
+      {/* <form onSubmit={handleSubmit} className={styles.topBefore}>
+        <input
+          type="text"
+          name="name"
+          className={styles.form_control}
+          id="name"
+          placeholder="Full Name"
+          // value=""
+          // onChange={''}
+          required
+          style={{ backgroundColor: 'black', borderColor: 'white' }}
+        />
+
+        <input
+          id="email"
+          type="email"
+          name="email"
+          className={styles.form_control}
+          placeholder=" Email"
+        />
+        <ValidationError prefix="Email" field="email" errors={state.errors} />
+
+        <textarea
+          className={styles.form_control}
+          rows="7"
+          placeholder=" Message"
+          id="message"
+          name="message"
+        ></textarea>
+        <ValidationError
+          prefix="Message"
+          field="message"
+          errors={state.errors}
+        />
+
+        <button
+          className={clsx(styles.btn, styles.btn1, styles.send_button)}
+          type="submit"
+          disabled={state.submitting}
+        >
+          SEND
+        </button>
+      </form> */}
     </section>
   );
 }
