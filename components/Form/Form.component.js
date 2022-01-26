@@ -10,6 +10,7 @@ import { FaGithub } from 'react-icons/fa';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { FaCodepen } from 'react-icons/fa';
 import { FaTwitter } from 'react-icons/fa';
+import Link from 'next/link';
 
 export default function Form() {
   const [state, handleSubmit] = useForm('mayvqkwn');
@@ -58,10 +59,37 @@ export default function Form() {
                   <FaMapMarkerAlt /> &nbsp;San Diego, CA
                 </div>
                 <div className={styles.app_contact}>
-                  <FaPhoneAlt /> &nbsp;+1 (619) 481-7715
+                  <FaPhoneAlt /> &nbsp;
+                  <a href="tel:1-619-481-7715" title="Give me a call">
+                    +1 (619) 481-7715
+                  </a>
                 </div>
                 <div className={styles.app_email}>
-                  <FaEnvelope /> &nbsp;ramonpbarros@gmail.com
+                  <FaEnvelope /> &nbsp;
+                  <a
+                    href="mailto:ramonpbarros@gmail.com"
+                    title="Send me an email"
+                  >
+                    ramonpbarros@gmail.com
+                  </a>
+                </div>
+                <div className={styles.app_email}>
+                  <a
+                    href="https://www.linkedin.com/in/ramon-barros-095b0b72/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <FaLinkedinIn />
+                  </a>
+                  &nbsp;
+                  <a
+                    href="https://github.com/ramonpbarros"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <FaGithub />
+                  </a>
+                  
                 </div>
               </div>
               <form onSubmit={handleSubmit} className={styles.screen_body_item}>
