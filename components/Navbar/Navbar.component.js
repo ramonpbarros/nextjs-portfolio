@@ -29,7 +29,7 @@ export default function Navbar() {
       <div className={styles.navbarContent}>
         <div className={styles.logoContainer}>
           <Link linkTo="/">
-            <h3 className={styles.logo}>Ramon</h3>
+            <h3 className={styles.logo}>RAMON</h3>
           </Link>
         </div>
 
