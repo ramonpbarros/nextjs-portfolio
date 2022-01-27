@@ -60,7 +60,12 @@ export default function Form() {
                 </div>
                 <div className={styles.app_contact}>
                   <FaPhoneAlt /> &nbsp;
-                  <a href="tel:1-619-481-7715" title="Give me a call">
+                  <a
+                    href="tel:1-619-481-7715"
+                    title="Give me a call"
+                    style={{ color: '#ddd' }}
+                    className={styles.contact_link}
+                  >
                     +1 (619) 481-7715
                   </a>
                 </div>
@@ -69,15 +74,19 @@ export default function Form() {
                   <a
                     href="mailto:ramonpbarros@gmail.com"
                     title="Send me an email"
+                    style={{ color: '#ddd' }}
+                    className={styles.email_link}
                   >
                     ramonpbarros@gmail.com
                   </a>
                 </div>
-                <div className={styles.app_email}>
+                <div className={styles.app_social_medias}>
                   <a
                     href="https://www.linkedin.com/in/ramon-barros-095b0b72/"
                     target="_blank"
                     rel="noreferrer"
+                    className={clsx(styles.likedin, 'mr')}
+                    style={{ color: '#ddd' }}
                   >
                     <FaLinkedinIn />
                   </a>
@@ -86,10 +95,11 @@ export default function Form() {
                     href="https://github.com/ramonpbarros"
                     target="_blank"
                     rel="noreferrer"
+                    style={{ color: '#ddd' }}
+                    className={styles.github}
                   >
                     <FaGithub />
                   </a>
-                  
                 </div>
               </div>
               <form onSubmit={handleSubmit} className={styles.screen_body_item}>

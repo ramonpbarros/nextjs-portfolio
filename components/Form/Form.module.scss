@@ -113,15 +113,35 @@
   font-size: 14px;
   color: #ddd;
 }
+
 .app_contact {
-  // margin-top: auto;
   font-size: 14px;
   color: #ddd;
 }
+
+.contact_link:hover {
+  color: #f0860d !important;
+}
+
 .app_email {
-  // margin-top: auto;
   font-size: 14px;
   color: #ddd;
+}
+
+.email_link:hover {
+  color: #f0860d !important;
+}
+
+.app_social_medias {
+  margin-top: 1em;
+}
+
+.likedin:hover {
+  color: #f0860d !important;
+}
+
+.github:hover {
+  color: #f0860d !important;
 }
 
 .app_form_group {
@@ -193,6 +213,39 @@
   text-align: center;
   margin-top: 4em;
 }
+ 
+@media screen and (min-width: 1500px) {
+  .container {
+    flex: 0 1 70em;
+    margin-top: 25em;
+  }
+
+  .app_title {
+    font-size: 30px;
+  }
+
+  .app_form_control::placeholder {
+    font-size: 20px;
+  }
+
+  .app_location {
+    font-size: 20px;
+  }
+  
+  .app_contact {
+    font-size: 20px;
+  }
+  
+  .app_email {
+    font-size: 20px;
+  }
+
+  .app_social_medias {
+    font-size: 30px;
+    margin-top: 0.5em;
+  }
+
+}
 
 @media screen and (max-width: 520px) {
   .screen_body {
@@ -213,6 +266,14 @@
 
   .app_title:after {
     display: none;
+  }
+
+  .app_location {
+    margin-top: 1em;
+  }
+
+  .app_social_medias {
+    margin-bottom: 1em;
   }
 }
 
