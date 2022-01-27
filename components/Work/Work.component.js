@@ -33,12 +33,12 @@ export default function Work() {
       <section className={clsx('section-component')}>
         <div className={styles.div}>
           <div className="reveal fade-left">
-            <p className={clsx(styles.h2, styles.work)}>Web Developer</p>
+            <p className={clsx(styles.work)}>Web Developer</p>
           </div>
         </div>
         <div className={clsx(styles.test, 'reveal', 'fade-right', 'section')}>
           <div className={styles.test2}>
-            <div className={styles.stroke}>
+            {/* <div className={styles.stroke}>
               <Typewriter
                 options={{
                   strings: [
@@ -49,7 +49,15 @@ export default function Work() {
                   loop: true
                 }}
               />
-            </div>
+            </div> */}
+            <h5>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              malesuada enim ac risus dignissim, quis efficitur velit tincidunt.
+              Donec eget libero fermentum, tincidunt metus non, blandit turpis.
+              Sed cursus pellentesque sem id suscipit. Aliquam nunc metus,
+              fringilla ut tincidunt at, tincidunt nec mi. Aliquam pharetra
+              tellus ac ante rhoncus imperdiet.
+            </h5>
             <Button title="Portfolio" link="/work" />
             <a
               className={clsx(styles.btn, styles.btn1)}
@@ -61,65 +69,9 @@ export default function Work() {
             </a>
           </div>
         </div>
-        <section className='section'>
+        <section className="section">
           <Form />
         </section>
-        {/* <div className="container form">
-          <form
-            action="https://formspree.io/ramonpbarros@gmail.com"
-            method="POST"
-          >
-            <div className="form-row">
-              <div className="form-group col-sm-6">
-                <label htmlFor="inputText">Name</label>
-                <input
-                  type="text"
-                  name="name"
-                  className="form-control"
-                  id="inputText"
-                  placeholder="Full name"
-                  // style="background-color: #030303;"
-                />
-              </div>
-              <div className="form-group col-sm-6">
-                <label htmlFor="inputEmail4">E-mail</label>
-                <input
-                  type="email"
-                  name="_replyto"
-                  className="form-control"
-                  id="inputEmail4"
-                  placeholder="name@example.com"
-                  // style="background-color: #030303;"
-                />
-              </div>
-            </div>
-            <div className="form-group">
-              <label htmlFor="exampleFormControlTextarea1">Message Me</label>
-              <textarea
-                name="message"
-                className="form-control"
-                id="exampleFormControlTextarea1"
-                rows="3"
-                placeholder="Enter your message"
-                // style="background-color: #030303; color: white;"
-              ></textarea>
-            </div>
-            <button type="submit" value="Send" className={clsx(styles.btn, styles.btn1)}>
-              Submit
-            </button>
-          </form>
-        </div> */}
-
-        {/* <div className={clsx(styles.test, 'section', 'reveal', 'fade-right')}>
-          <Image
-            src="/images/work.jpg"
-            width="750px"
-            height="450"
-            alt="image"
-            className={styles.test2}
-          />
-          <div className={styles.overlay}></div>
-        </div> */}
       </section>
 
       <style jsx>{`
