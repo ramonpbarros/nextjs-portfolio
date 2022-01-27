@@ -36,7 +36,7 @@ export default function Work() {
             <p className={clsx(styles.work)}>Web Developer</p>
           </div>
         </div>
-        <div className={clsx(styles.test, 'reveal', 'fade-right', 'section')}>
+        <div className={clsx(styles.test, 'reveal', 'fade-left', 'section')}>
           <div className={styles.test2}>
             {/* <div className={styles.stroke}>
               <Typewriter

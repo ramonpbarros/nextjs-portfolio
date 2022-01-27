@@ -248,6 +248,10 @@
 }
 
 @media screen and (max-width: 520px) {
+  .container {
+    margin-top: -2em;
+  }
+
   .screen_body {
     flex-direction: column;
   }
