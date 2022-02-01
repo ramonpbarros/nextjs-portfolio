@@ -39,6 +39,7 @@ function About() {
           impactful user-experience.
         </p>
         <p>test</p>
+        <p>test</p>
         <p>Interested on getting to know me better? <Link href='/contact' className='test'>Let&#39;s talk</Link> </p>
       </section>
     </>
