@@ -27,23 +27,11 @@ function About() {
           />
         </div>
         <p className='mt-4'>
-          Born and raised in Brazil &#127463;&#127479;<br/>I&#39;ve been living in San Diego, California for the past 15 years and during
+          Born and raised in Brazil &#127463;&#127479;<br/>I&#39;ve been living in San Diego, California for the past 12 years and during
           this time I had some experience working with mobile development, but
-          mostly working on my own business. I was in the restaurant business
+          mostly working on my own businesses. I was in the restaurant business
           for 5 years, always applying technical tools in order to increase
-          sales. I earned a certificate in Full Stack Web Development from the
-          University of California San Diego, with newly developed skills. With
-          a focus on front-end and back-end web development, I was able to test
-          my skills building different projects either by myself or in groups.
-          With each project, my goal is to best engage my audience for an
-          impactful user-experience.
-        </p>
-        <p className='mt-4'>
-          Born and raised in Brazil &#127463;&#127479;<br/>I&#39;ve been living in San Diego, California for the past 15 years and during
-          this time I had some experience working with mobile development, but
-          mostly working on my own business. I was in the restaurant business
-          for 5 years, always applying technical tools in order to increase
-          sales. I earned a certificate in Full Stack Web Development from the
+          sales. In 2020 I earned a certificate in Full Stack Web Development from the
           University of California San Diego, with newly developed skills. With
           a focus on front-end and back-end web development, I was able to test
           my skills building different projects either by myself or in groups.

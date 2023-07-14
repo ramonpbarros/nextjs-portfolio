@@ -1,13 +1,13 @@
 .background {
   display: flex;
-  min-height: 100vh;
+  max-height: 100vh;
 }
 
 .container {
   flex: 0 1 50em;
   // flex: 1 0 auto;
   margin: auto;
-  padding: 10px;
+  padding-top: 5em;
 }
 
 .screen {
@@ -213,7 +213,7 @@
   text-align: center;
   margin-top: 4em;
 }
- 
+
 @media screen and (min-width: 1500px) {
   .container {
     flex: 0 1 70em;
@@ -231,11 +231,11 @@
   .app_location {
     font-size: 20px;
   }
-  
+
   .app_contact {
     font-size: 20px;
   }
-  
+
   .app_email {
     font-size: 20px;
   }

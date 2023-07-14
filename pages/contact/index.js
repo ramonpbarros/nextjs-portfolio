@@ -2,6 +2,7 @@ import Head from 'next/head';
 import React from 'react';
 import withTransition from '../../HOC/withTransition';
 import Navbar from '../../components/Navbar/Navbar.component';
+import Form from '../../components/Form/Form.component';
 
 function Contact() {
   return (
@@ -12,7 +13,7 @@ function Contact() {
       <header>
         <Navbar />
       </header>
-      <h1>Contact</h1>
+        <Form />
     </>
   );
 }

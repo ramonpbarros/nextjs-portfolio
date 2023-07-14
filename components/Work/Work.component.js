@@ -5,7 +5,6 @@ import Button from '../Button/Button';
 import styles from './Work.module.scss';
 import Typewriter from 'typewriter-effect';
 import Form from '../Form/Form.component';
-// import Resume from '../../public/images/ramon.pdf';
 
 export default function Work() {
   useEffect(() => {
@@ -38,32 +37,30 @@ export default function Work() {
         </div>
         <div className={clsx(styles.test, 'reveal', 'fade-left', 'section')}>
           <div className={styles.test2}>
-            {/* <div className={styles.stroke}>
+            <div className={styles.stroke}>
               <Typewriter
                 options={{
                   strings: [
                     'Passionate about developing apps.',
-                    'Building a more intuitive user experience on the web.'
+                    'Building a more intuitive user experience on the web.',
                   ],
                   autoStart: true,
-                  loop: true
+                  loop: true,
                 }}
               />
-            </div> */}
+            </div>
             <h5>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-              malesuada enim ac risus dignissim, quis efficitur velit tincidunt.
-              Donec eget libero fermentum, tincidunt metus non, blandit turpis.
-              Sed cursus pellentesque sem id suscipit. Aliquam nunc metus,
-              fringilla ut tincidunt at, tincidunt nec mi. Aliquam pharetra
-              tellus ac ante rhoncus imperdiet.
+              Hi there! If you would like to see some of my work go ahead and
+              click on the portfolio button. You can also download my resume by
+              clicking on the resume button. If you feel like connecting with me
+              scroll down and send me a message, I&#39;d love to hear from you
+              and possibly work together!
             </h5>
             <Button title="Portfolio" link="/work" />
             <a
               className={clsx(styles.btn, styles.btn1)}
-              href="/images/resume.pdf"
+              href="/images/ramonResume.pdf"
               download="resume.pdf"
-              // target="_blank"
             >
               Resume
             </a>
