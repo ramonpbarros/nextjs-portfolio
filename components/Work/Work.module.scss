@@ -6,25 +6,20 @@
 }
 
 .div {
-  // display: grid;
-  // height: 100vh;
-  // width: fit-content;
-  // justify-content: center;
-  // align-content: center;
-  // grid-template-columns: max-content max-content;
-  margin-top: 2em;
-  margin-left: 2em;
-  float: left;
-  // background-color: #fff;
+  margin: 2em 2em;
+  padding: 0 2em;
+  height: 100%;
 }
 
 .test {
-  clear:both;
+  clear: both;
 }
 
 .test2 {
-  text-align: center;
+  text-align: left;
   font-size: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .stroke {
@@ -33,58 +28,13 @@
   font-weight: bold;
 }
 
-
 .work {
   // transform: translate(-50%, -50%);
   color: white;
   font-size: 80px;
   font-weight: bold;
+  margin-bottom: 0.2em;
 }
-
-// .work::before {
-//   content: 'Front End';
-//   position: absolute;
-//   color: transparent;
-//   background-image: repeating-linear-gradient(
-//     45deg,
-//     transparent 0,
-//     transparent 2px,
-//     white 2px,
-//     white 4px
-//   );
-//   -webkit-background-clip: text;
-//   top: 0px;
-//   left: 0;
-//   z-index: -1;
-//   transition: 1s;
-// }
-
-// .work::after {
-//   content: 'Web Developer';
-//   position: absolute;
-//   color: transparent;
-//   background-image: repeating-linear-gradient(
-//     135deg,
-//     transparent 0,
-//     transparent 2px,
-//     white 2px,
-//     white 4px
-//   );
-//   -webkit-background-clip: text;
-//   top: 0px;
-//   left: 0px;
-//   transition: 1s;
-// }
-
-// .work:hover:before {
-//   top: 10px;
-//   left: 10px;
-// }
-
-// .work:hover:after {
-//   top: -10px;
-//   left: -10px;
-// }
 
 .reveal {
   position: relative;
@@ -92,20 +42,20 @@
 }
 
 .btn {
-  appearance: none;
-  background: none;
-  border: none;
-  outline: none;
   cursor: pointer;
-
-  padding: 14px 60px;
+  // width: 100%;
+  // height: 10%;
+  padding: 14px 100px;
   border-radius: 8px;
   color: #212121;
-  font-size: 14px;
-  font-weight: 600;
+  font-size: var(--fs-200);
+  font-family: var(--ff-serif);
+  letter-spacing: 2.7px;
   text-transform: uppercase;
-  margin: 1.5em 1.5em;
+  // margin: 2em;
+  margin: auto;
   transition: 0.4s;
+
 }
 
 .btn1 {
@@ -119,6 +69,11 @@
 .btn1:hover {
   color: #353535;
   background-position: 100%;
+}
+
+.buttons {
+  display: block;
+  margin: 2em;
 }
 
 @media screen and (min-width: 1500px) {
@@ -144,5 +99,4 @@
   .test2 {
     font-size: 20px;
   }
- 
 }

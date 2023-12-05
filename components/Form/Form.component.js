@@ -52,8 +52,8 @@ export default function Form() {
             <div className={styles.screen_body}>
               <div className={clsx(styles.screen_body_item, styles.left)}>
                 <div className={styles.app_title}>
-                  <span>CONTACT</span>
-                  <span>ME</span>
+                  <span>GET IN TOUCH</span>
+                  {/* <span>ME</span> */}
                 </div>
                 <div className={styles.app_location}>
                   <FaMapMarkerAlt /> &nbsp;San Diego, CA

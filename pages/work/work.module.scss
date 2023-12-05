@@ -1,8 +1,19 @@
 .img-wrapper {
   display: flex;
   flex-wrap: wrap;
- }
+  align-items: center;
+  justify-content: center;
 
- .img-wrapper > div {
-  flex: 0 1 33%;
- }
+}
+
+// .img-wrapper > div {
+//   flex: 0 1 33%;
+// }
+
+// .img_div {
+//   // align-items: center;
+//   // justify-content: center;
+// width: 800;
+// height: 500;
+
+// }

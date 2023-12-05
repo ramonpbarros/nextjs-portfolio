@@ -15,9 +15,6 @@
 }
 
 .logoContainer {
-  width: auto;
-  height: 40px;
-  width: 75px;
   position: relative;
 }
 
@@ -50,6 +47,11 @@
 
 .logo {
   color: white;
+  font-size: var(--fs-200);
+  text-transform: uppercase;
+  letter-spacing: 2.7px;
+  font-family: var(--ff-serif);
+
   &:after {
     content: '';
     position: absolute;

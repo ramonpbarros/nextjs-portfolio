@@ -28,8 +28,8 @@ export default function Navbar() {
     <nav className={clsx(styles.navBar)}>
       <div className={styles.navbarContent}>
         <div className={styles.logoContainer}>
-          <Link linkTo="/">
-            <h3 className={styles.logo}>RAMON</h3>
+          <Link linkTo="/" type="nav">
+            Portfolio
           </Link>
         </div>
 
@@ -38,11 +38,11 @@ export default function Navbar() {
         </div>
 
         <ul className={clsx(styles.navLinks)}>
-          <li>
+          {/* <li>
             <Link linkTo="/" type="nav">
               Home
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link linkTo="/work" type="nav">
               Work
@@ -53,11 +53,11 @@ export default function Navbar() {
               About
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link linkTo="/contact" type="nav">
               Contact
             </Link>
-          </li>
+          </li> */}
         </ul>
       </div>
 

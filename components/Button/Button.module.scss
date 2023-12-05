@@ -5,11 +5,13 @@
   outline: none;
   cursor: pointer;
 
+
   padding: 14px 60px;
   border-radius: 8px;
   color: #212121;
-  font-size: 14px;
-  font-weight: 600;
+  font-size: var(--fs-200);
+  font-family: var(--ff-serif);
+  letter-spacing: 2.7px;
   text-transform: uppercase;
   margin: 1.5em 1.5em;
   transition: 0.4s;

@@ -33,22 +33,17 @@ export default function Work() {
         <div className={styles.div}>
           <div className="reveal fade-left">
             <p className={clsx(styles.work)}>Web Developer</p>
+            <a
+                className={clsx(styles.btn, styles.btn1)}
+                href="/images/ramonResume.pdf"
+                download="resume.pdf"
+              >
+                Resume
+              </a>
           </div>
         </div>
-        <div className={clsx(styles.test, 'reveal', 'fade-left', 'section')}>
+        {/* <div className={clsx(styles.test, 'reveal', 'fade-left', 'section')}>
           <div className={styles.test2}>
-            <div className={styles.stroke}>
-              <Typewriter
-                options={{
-                  strings: [
-                    'Passionate about developing apps.',
-                    'Building a more intuitive user experience on the web.',
-                  ],
-                  autoStart: true,
-                  loop: true,
-                }}
-              />
-            </div>
             <h5>
               Hi there! If you would like to see some of my work go ahead and
               click on the portfolio button. You can also download my resume by
@@ -56,19 +51,20 @@ export default function Work() {
               scroll down and send me a message, I&#39;d love to hear from you
               and possibly work together!
             </h5>
-            <Button title="Portfolio" link="/work" />
-            <a
-              className={clsx(styles.btn, styles.btn1)}
-              href="/images/ramonResume.pdf"
-              download="resume.pdf"
-            >
-              Resume
-            </a>
+            <div className={clsx(styles.buttons)}>
+              <Button title="Portfolio" link="/work" />
+              <a
+                className={clsx(styles.btn, styles.btn1)}
+                href="/images/ramonResume.pdf"
+                download="resume.pdf"
+              >
+                Resume
+              </a>
+            </div>
           </div>
-        </div>
-        <section className="section">
-          <Form />
-        </section>
+        </div> */}
+            <Form />
+        <section className="section"></section>
       </section>
 
       <style jsx>{`
