@@ -14,7 +14,7 @@ export default function Form() {
           ></div>
 
           <div className={clsx(styles.tl_year)}>
-            <p className="">KILLER WHALE</p>
+            <p className="">KILLERWHALE</p>
           </div>
 
           <div className={clsx(styles.tl_content)}>

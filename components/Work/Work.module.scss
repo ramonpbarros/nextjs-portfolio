@@ -87,7 +87,6 @@
 
   .div {
     padding-left: 10em;
-    // height: 90vh;
   }
 
   .test2 {
@@ -106,12 +105,8 @@
   }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 600px) {
   .work {
     font-size: 60px;
-  }
-
-  .test2 {
-    font-size: 20px;
   }
 }

@@ -43,7 +43,7 @@ function About() {
           audiences.
           <br/>
           <br/>
-          Adding to this journey, I'm currently enrolled in the App
+          Adding to this journey, I`m currently enrolled in the App
           Academy Software Development Program. App Academy stands out for its
           immersive and comprehensive curriculum in software development,
           emphasizing hands-on learning and collaborative problem-solving. This
