@@ -1,13 +1,16 @@
 .background {
   display: flex;
-  max-height: 100vh;
+  // max-height: 100vh;
+  margin-top: -50em;
+}
+
+.section{
+  margin-top: 2em;
 }
 
 .container {
   flex: 0 1 50em;
-  // flex: 1 0 auto;
-  margin: auto;
-  padding-top: 5em;
+  margin: 0 auto;
 }
 
 .screen {
@@ -25,7 +28,7 @@
   right: 20px;
   bottom: 0;
   border-radius: 15px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
   z-index: -1;
 }
 
@@ -167,7 +170,7 @@
   font-size: 14px;
   // text-transform: uppercase;
   outline: none;
-  transition: border-color .2s;
+  transition: border-color 0.2s;
 }
 
 .app_form_control::placeholder {
@@ -214,7 +217,7 @@
   margin-top: 4em;
 }
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1400px) {
   .container {
     flex: 0 1 70em;
     margin-top: 25em;
@@ -244,12 +247,27 @@
     font-size: 30px;
     margin-top: 0.5em;
   }
-
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (min-width: 1000px) {
   .container {
-    margin-top: -1em;
+    flex: 0 1 70em;
+    margin-top: 24em;
+
+  }
+
+  .screen {
+    height: 26em;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    margin-top: 20em;
+  }
+
+  .screen {
+    height: 37em;
   }
 
   .screen_body {

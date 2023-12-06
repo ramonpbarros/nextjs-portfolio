@@ -27,7 +27,7 @@ export default function Form() {
   }
 
   return (
-    <section>
+    <>
       <div className={styles.background}>
         <div className={styles.container}>
           <div className={styles.screen}>
@@ -198,6 +198,6 @@ export default function Form() {
           SEND
         </button>
       </form> */}
-    </section>
+    </>
   );
 }

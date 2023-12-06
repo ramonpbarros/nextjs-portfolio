@@ -34,37 +34,15 @@ export default function Work() {
           <div className="reveal fade-left">
             <p className={clsx(styles.work)}>Web Developer</p>
             <a
-                className={clsx(styles.btn, styles.btn1)}
-                href="/images/ramonResume.pdf"
-                download="resume.pdf"
-              >
-                Resume
-              </a>
+              className={clsx(styles.btn, styles.btn1)}
+              href="/images/ramonResume.pdf"
+              download="resume.pdf"
+            >
+              Resume
+            </a>
           </div>
         </div>
-        {/* <div className={clsx(styles.test, 'reveal', 'fade-left', 'section')}>
-          <div className={styles.test2}>
-            <h5>
-              Hi there! If you would like to see some of my work go ahead and
-              click on the portfolio button. You can also download my resume by
-              clicking on the resume button. If you feel like connecting with me
-              scroll down and send me a message, I&#39;d love to hear from you
-              and possibly work together!
-            </h5>
-            <div className={clsx(styles.buttons)}>
-              <Button title="Portfolio" link="/work" />
-              <a
-                className={clsx(styles.btn, styles.btn1)}
-                href="/images/ramonResume.pdf"
-                download="resume.pdf"
-              >
-                Resume
-              </a>
-            </div>
-          </div>
-        </div> */}
-            <Form />
-        <section className="section"></section>
+        <Form />
       </section>
 
       <style jsx>{`
