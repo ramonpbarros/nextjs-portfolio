@@ -2,8 +2,8 @@ import Head from 'next/head';
 import Image from 'next/image';
 
 import Link from 'next/link';
-import styles from './about.module.scss'
-import withTransition from "../../HOC/withTransition";
+import styles from './about.module.scss';
+import withTransition from '../../HOC/withTransition';
 import Navbar from '../../components/Navbar/Navbar.component';
 
 function About() {
@@ -26,21 +26,36 @@ function About() {
             className="profile-img"
           />
         </div>
-        <p className='mt-4'>
-          Born and raised in Brazil &#127463;&#127479;<br/>I&#39;ve been living in San Diego, California for the past 12 years and during
-          this time I had some experience working with mobile development, but
-          mostly working on my own businesses. I was in the restaurant business
-          for 5 years, always applying technical tools in order to increase
-          sales. In 2020 I earned a certificate in Full Stack Web Development from the
-          University of California San Diego, with newly developed skills. With
-          a focus on front-end and back-end web development, I was able to test
-          my skills building different projects either by myself or in groups.
-          With each project, my goal is to best engage my audience for an
-          impactful user-experience.
+        <p className="mt-4">
+          I&#39;ve been Originally from Brazil &#127463;&#127479;, I've called San Diego,
+          California home for the past 12 years. Throughout this time, I`ve
+          immersed myself in mobile development while simultaneously steering my
+          own entrepreneurial ventures. Over five years, I honed my skills in
+          the restaurant industry, leveraging technical tools to drive sales.
+          <br/>
+          <br/>
+          In
+          2020, I completed the Full Stack Web Development certificate program
+          at the University of California San Diego, refining both my front-end
+          and back-end development expertise. This journey equipped me to
+          undertake diverse projects, either solo or collaboratively, aiming
+          always to craft user experiences that captivate and resonate with
+          audiences.
+          <br/>
+          <br/>
+          Adding to this journey, I'm currently enrolled in the App
+          Academy Software Development Program. App Academy stands out for its
+          immersive and comprehensive curriculum in software development,
+          emphasizing hands-on learning and collaborative problem-solving. This
+          program aligns seamlessly with my pursuit of creating impactful
+          applications that engage users effectively.
         </p>
-        <p>test3</p>
-        <p>test3</p>
-        <p>Interested on getting to know me better? <Link href='/contact' className='test'>Let&#39;s talk</Link> </p>
+        <p>
+          Interested on getting to know me better?{' '}
+          <Link href="/contact" className="test">
+            Let&#39;s talk
+          </Link>{' '}
+        </p>
       </section>
     </>
   );
