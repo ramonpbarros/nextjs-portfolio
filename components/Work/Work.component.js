@@ -41,8 +41,8 @@ export default function Work() {
               Resume
             </a>
           </div>
+          <Form />
         </div>
-        <Form />
       </section>
 
       <style jsx>{`

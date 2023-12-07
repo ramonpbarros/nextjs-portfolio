@@ -2,7 +2,7 @@ import Head from 'next/head';
 import clsx from 'clsx';
 import withTransition from '../../HOC/withTransition';
 import Navbar from '../../components/Navbar/Navbar.component';
-import Timeline from '../../components/Timeline/Title.component';
+import Timeline from '../../components/Timeline/Timeline.component';
 import styles from './work.module.scss';
 import Image from 'next/image';
 

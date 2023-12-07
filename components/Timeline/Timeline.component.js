@@ -1,17 +1,13 @@
 import clsx from 'clsx';
 import styles from './Timeline.module.scss';
 import Link from 'next/link';
-import Image from 'next/image';
 
 export default function Form() {
   return (
     <>
       <section className={clsx(styles.timeline)}>
         <div className={clsx(styles.tl_item)}>
-          <div
-            className={clsx(styles.tl_kw_bg)}
-            // style="background-image: url(https://placeimg.com/801/801/nature)"
-          ></div>
+          <div className={clsx(styles.tl_kw_bg)}></div>
 
           <div className={clsx(styles.tl_year)}>
             <p className="">KILLERWHALE</p>
@@ -29,10 +25,7 @@ export default function Form() {
         </div>
 
         <div className={clsx(styles.tl_item)}>
-          <div
-            className={clsx(styles.tl_uc_bg)}
-            // style="background-image: url(https://placeimg.com/802/802/nature)"
-          ></div>
+          <div className={clsx(styles.tl_uc_bg)}></div>
 
           <div className={clsx(styles.tl_year)}>
             <p className="">UCSD</p>
@@ -53,10 +46,7 @@ export default function Form() {
         </div>
 
         <div className={clsx(styles.tl_item)}>
-          <div
-            className={clsx(styles.tl_ok_bg)}
-            // style="background-image: url(https://placeimg.com/803/803/nature)"
-          ></div>
+          <div className={clsx(styles.tl_ok_bg)}></div>
 
           <div className={clsx(styles.tl_year)}>
             <p className="">OAKLEY</p>
@@ -75,47 +65,34 @@ export default function Form() {
           </div>
         </div>
 
-        <div className={clsx(styles.tl_item)}>
-          <div
-            className={clsx(styles.tl_gz_bg)}
-            // style="background-image: url(https://placeimg.com/800/800/nature)"
-            //   <Image
-            //   // loader={imageLoader}
-            //   src="/public/img/godzilla.jpeg"
-            //   alt="Picture of the author"
-            //   width={500}
-            //   height={500}
-            // />
-          ></div>
+        <Link href='/godzilla' passHref>
+          <div className={clsx(styles.tl_item)}>
+            <div className={clsx(styles.tl_gz_bg)}></div>
 
-          <div className={clsx(styles.tl_year)}>
-            <p className="">GODZILLA</p>
-          </div>
+            <div className={clsx(styles.tl_year)}>
+              <p className="">GODZILLA</p>
+            </div>
 
-          <div className={clsx(styles.tl_content)}>
-            <h1 className="">Godzilla AR Comic-Con</h1>
-            <p>
-              Amazing project built through a company I worked for in 2013
-              called Sook Apps. I was an intern back then and I worked mostly on
-              the Android version, learning the basics of Java and a lot of XML.
-              I also Improved my photoshop skills and got my feet wet on the
-              mobile development environment. *Winner of the Digital out-of-home
-              awards*
-            </p>
-            <a
-              target="_blank"
-              href="https://www.mjdinteractive.com/portfolio/godzilla-comic-con/"
-              rel="noopener noreferrer"
-            >
-              {/* <div
-                className={`${
-                  dark ? styles.iconTwitterWhite : styles.iconTwitter
-                } mr-3`}
-              /> */}
-              More info
-            </a>
+            <div className={clsx(styles.tl_content)}>
+              <h1 className="">Godzilla AR Comic-Con</h1>
+              <p>
+                Amazing project built through a company I worked for in 2013
+                called Sook Apps. I was an intern back then and I worked mostly
+                on the Android version, learning the basics of Java and a lot of
+                XML. I also Improved my photoshop skills and got my feet wet on
+                the mobile development environment. *Winner of the Digital
+                out-of-home awards*
+              </p>
+              {/* <a
+                target="_blank"
+                href="https://www.mjdinteractive.com/portfolio/godzilla-comic-con/"
+                rel="noopener noreferrer"
+              >
+                More info
+              </a> */}
+            </div>
           </div>
-        </div>
+        </Link>
       </section>
     </>
   );
