@@ -27,7 +27,7 @@ function About() {
           />
         </div>
         <p className="mt-4">
-          I&#39;ve been Originally from Brazil &#127463;&#127479;, I've called San Diego,
+          I&#39;ve been Originally from Brazil &#127463;&#127479;, I`ve called San Diego,
           California home for the past 12 years. Throughout this time, I`ve
           immersed myself in mobile development while simultaneously steering my
           own entrepreneurial ventures. Over five years, I honed my skills in
